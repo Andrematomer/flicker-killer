@@ -1,12 +1,26 @@
-# Flicker Killer
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6009dfc2-142f-4ac0-87a3-6998032c322c" alt="Logo" width="300">
+</p>
 
-### Does this look familiar when you're watching a video?
+# Does this look familiar when you're watching a video in fullscreen?
 
-![The visual artifact](image.png)
+<table>
+  <tr>
+    <!-- Left Column: GIF -->
+    <td style="width:50%; vertical-align: top;">
+      <img src="https://github.com/user-attachments/assets/311b9823-738d-499d-95e4-f4d56400acd5" alt="Demo GIF" width="100%" />
+    </td>
+    <!-- Right Column: Video -->
+    <td style="width:50%; vertical-align: top;">
+      <video src="https://github.com/user-attachments/assets/ea8d8787-7e99-453f-8e41-863e03cb3363" controls width="100%">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+  </tr>
+</table>
 
-[**Click here to watch a full video demonstration of the glitch.**](explainer-video.mp4)
+If you're seeing that flash of corrupted pixels, you've found the right place.
 
-If you're seeing that flash of corrupted pixels when video controls fade in or out, you've found the right place.
 
 ### So, What's Actually Happening?
 
@@ -21,7 +35,7 @@ The *only* thing that seems to reliably stop the FSE switch is forcing a **nativ
 *   The Emoji panel (`Win + .`)
 *   The Voice Typing window (`Win + H`)
 
-Opening one of these completely suppresses the glitch. But who wants to watch a movie with a giant, distracting panel open?
+Opening one of these completely suppresses the glitch. But who wants to watch a video with a giant, distracting panel open?
 
 ### The Solution: An Invisible Windows Overlay
 
@@ -51,4 +65,5 @@ This project is shared under the ISC License. See the `LICENSE` file for details
 ### Disclaimer
 
 This is a workaround for a specific bug and is not an official fix from Microsoft or any hardware vendor. Use at your own risk.
+
 
