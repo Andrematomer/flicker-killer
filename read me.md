@@ -51,3 +51,4 @@ This project is shared under the ISC License. See the `LICENSE` file for details
 ### Disclaimer
 
 This is a workaround for a specific bug and is not an official fix from Microsoft or any hardware vendor. Use at your own risk.
+
