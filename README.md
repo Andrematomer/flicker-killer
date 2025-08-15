@@ -41,7 +41,7 @@ Opening one of these completely suppresses the glitch. But who wants to watch a 
 
 That's exactly what **Flicker Killer** does. It creates the perfect workaround by mimicking that solution, but invisibly.
 
-The app runs silently in your system tray and places a tiny, **completely transparent** and **click-through** window on your screen. Because this is a native window, it's enough to trick the browser into never attempting the problematic switch to FSE mode.
+The app runs silently in your system tray and places a tiny, transparent, and click-through window on your screen. Crucially, this window is set to 'always on top,' mimicking the behavior of a native Windows UI panel. This is enough to trick the browser into never attempting the problematic switch to FSE mode.
 
 The result? The glitch is eliminated entirely, and your fullscreen video playback is perfectly smooth.
 
@@ -63,5 +63,6 @@ The result? The glitch is eliminated entirely, and your fullscreen video playbac
 This project is shared under the ISC License. See the `LICENSE` file for details.
 
 ### Disclaimer
+
 
 This is a workaround for a specific bug and is not an official fix from Microsoft or any hardware vendor. Use at your own risk.
