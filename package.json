@@ -1,0 +1,31 @@
+{
+  "name": "flicker-killer",
+  "version": "1.0.0",
+  "description": "A simple app to prevent browser flickering on high-refresh rate displays.",
+  "main": "main.js",
+  "author": "Andrematomer",
+  "license": "ISC",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.0.0"
+  },
+  "build": {
+    "appId": "com.Andrematomer.flickerkiller",
+    "productName": "Flicker Killer",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": true
+    }
+  }
+}
