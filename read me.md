@@ -2,9 +2,9 @@
 
 ### Does this look familiar when you're watching a video?
 
-![The visual artifact](your-glitch-image.png)
+![The visual artifact](image.png)
 
-[**Click here to watch a full video demonstration of the glitch.**](your-explainer-video.mp4)
+[**Click here to watch a full video demonstration of the glitch.**](explainer-video.mp4)
 
 If you're seeing that flash of corrupted pixels when video controls fade in or out, you've found the right place.
 
@@ -49,4 +49,5 @@ The result? The glitch is eliminated entirely, and your fullscreen video playbac
 This project is shared under the ISC License. See the `LICENSE` file for details.
 
 ### Disclaimer
+
 This is a workaround for a specific bug and is not an official fix from Microsoft or any hardware vendor. Use at your own risk.
