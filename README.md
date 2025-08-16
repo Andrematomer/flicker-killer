@@ -46,6 +46,9 @@ If you're seeing a brief flash, flicker, or visual artifact when UI elements app
   ---
   
   ### Features
+
+  <img src="https://github.com/user-attachments/assets/f8ff5d11-507b-4a75-b260-ae044e780b32" alt="Logo" width="300">
+  
   *   **Set it and Forget It:** Runs silently in your system tray.
   *   **Completely Invisible:** The window is transparent and doesn't interfere with your mouse.
   *   **Run on Startup:** A simple right-click on the tray icon lets you enable it to start with Windows.
@@ -65,3 +68,4 @@ If you're seeing a brief flash, flicker, or visual artifact when UI elements app
   
   This is a workaround for a specific bug and is not an official fix from Microsoft or any hardware vendor. Use at your own risk.
   
+
