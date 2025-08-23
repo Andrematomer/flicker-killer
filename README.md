@@ -6,16 +6,8 @@
   
   <table>
     <tr>
-      <!-- Left Column: GIF -->
-      <td style="width:50%; vertical-align: top;">
-        <img src="https://github.com/user-attachments/assets/311b9823-738d-499d-95e4-f4d56400acd5" alt="Demo GIF" width="100%" />
-      </td>
-      <!-- Right Column: Video -->
-      <td style="width:50%; vertical-align: top;">
-        <video src="https://github.com/user-attachments/assets/ea8d8787-7e99-453f-8e41-863e03cb3363" controls width="100%">
-          Your browser does not support the video tag.
-        </video>
-      </td>
+      <td style="width:50%; vertical-align: top;"><img src="https://github.com/user-attachments/assets/311b9823-738d-499d-95e4-f4d56400acd5" alt="Demo GIF" width="100%" /></td>
+      <td style="width:50%; vertical-align: top;"><video src="https://github.com/user-attachments/assets/ea8d8787-7e99-453f-8e41-863e03cb3363" controls width="100%">Your browser does not support the video tag.</video></td>
     </tr>
   </table>
   
@@ -31,7 +23,7 @@ If you're seeing a brief flash, flicker, or visual artifact when UI elements app
   *   The Live Captions overlay (`Win + Ctrl + L`)
   *   The Emoji panel (`Win + .`)
   *   The Voice Typing window (`Win + H`)
-  *   Volume level (`keep pressing vol up & down to prevent volume level UI to dissappear`)
+  *   The Windows Volume bar
   
   Opening one of these completely suppresses the glitch. But who wants to watch a video with a distracting panel open?
   
@@ -46,26 +38,31 @@ If you're seeing a brief flash, flicker, or visual artifact when UI elements app
   ---
   
   ### Features
-
-  <img src="https://github.com/user-attachments/assets/f8ff5d11-507b-4a75-b260-ae044e780b32" alt="Logo" width="300">
-  
   *   **Set it and Forget It:** Runs silently in your system tray.
   *   **Completely Invisible:** The window is transparent and doesn't interfere with your mouse.
   *   **Run on Startup:** A simple right-click on the tray icon lets you enable it to start with Windows.
   *   **Lightweight:** Uses almost no system resources.
+  
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/f8ff5d11-507b-4a75-b260-ae044e780b32" alt="System Tray Menu" width="300">
+  </p>
   
   ### Installation
   1.  Go to the [**Releases Page**](https://github.com/Andrematomer/flicker-killer/releases) for this project.
   2.  Download the latest `Flicker.Killer.Setup.exe` file.
   3.  Run the installer.
   4.  After installation, right-click the icon in your system tray and select "Run on Startup." You're all set!
+
+  ### Known Limitations
+
+  *   **Does Not Affect Fullscreen Exclusive Games:** This tool is designed for browsers and other desktop apps. It will **not** work for high-performance games that use a true Fullscreen Exclusive (FSE) mode, as they take direct control of the display.
   
+  *   **App Restart Required After FSE Gaming:** After closing a game that uses FSE mode, Windows may not correctly restore Flicker Killer's "always on top" property. If the browser flicker returns, simply **restart Flicker Killer** (right-click its tray icon > Quit, then launch it again) to restore its function.
+  
+  **Recommendation for Gamers:** To avoid these issues, run your games in a **"Borderless Fullscreen"** or **"Windowed Fullscreen"** mode if the option is available.
+
   ### License
   This project is shared under the ISC License. See the `LICENSE` file for details.
   
   ### Disclaimer
-  
-  
   This is a workaround for a specific bug and is not an official fix from Microsoft or any hardware vendor. Use at your own risk.
-  
-
