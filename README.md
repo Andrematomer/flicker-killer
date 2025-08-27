@@ -55,6 +55,8 @@ If you're seeing a brief flash, flicker, or visual artifact when UI elements app
 
   ### Known Limitations
 
+  *   **Ocasional shutdown delay:**  The message "This app is preventing shutdown" may appear from time to time. Just wait—it will shut down automatically.
+
   *   **Does Not Affect some Fullscreen Exclusive Games:** This tool is designed for browsers and other desktop apps. It will **not** work for some games that use a true Fullscreen Exclusive (FSE) mode, as they take direct control of the display.
   
   *   **App Restart Required After FSE Gaming and windows lock screen:** After closing a game that uses FSE mode or after going into lock screen (`Win + L`), Windows may not correctly restore Flicker Killer's "always on top" property. If the browser flicker returns, simply **restart Flicker Killer** (right-click its tray icon > Quit, then launch it again) to restore its function.
@@ -66,4 +68,5 @@ If you're seeing a brief flash, flicker, or visual artifact when UI elements app
   
   ### Disclaimer
   This is a workaround for a specific bug and is not an official fix from Microsoft or any hardware vendor. Use at your own risk.
+
 
