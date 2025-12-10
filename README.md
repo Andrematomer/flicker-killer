@@ -35,16 +35,6 @@ The app runs silently in your system tray and places a tiny, transparent, and cl
 
 The result? The glitch is eliminated entirely, and your fullscreen video playback is perfectly smooth.
 
-### ⚠️ Alternative: The Permanent Fix (Clean Install)
-
-There is one other way to solve this: **a fresh, clean installation of Windows**. 
-
-I have confirmed that performing a "nuke and pave" (wiping the drive via BIOS and reinstalling Windows from scratch) permanently resolves this flickering issue at the driver/OS level. If you are willing to back up your data and start over, you likely won't need this tool.
-
-**However, if you want to fix the flicker _right now_ without the hassle of wiping your entire system, Flicker Killer is the instant solution.**
-
----
-
 ### Features
 *   **Set it and Forget It:** Runs silently in your system tray.
 *   **Completely Invisible:** The window is transparent and doesn't interfere with your mouse.
