@@ -1,72 +1,78 @@
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/6009dfc2-142f-4ac0-87a3-6998032c322c" alt="Logo" width="300">
-  </p>
-  
-  # Do you get a weird flicker or glitch when watching fullscreen video in a web browser?
-  
-  <table>
-    <tr>
-      <td style="width:50%; vertical-align: top;"><img src="https://github.com/user-attachments/assets/311b9823-738d-499d-95e4-f4d56400acd5" alt="Demo GIF" width="100%" /></td>
-      <td style="width:50%; vertical-align: top;"><video src="https://github.com/user-attachments/assets/ea8d8787-7e99-453f-8e41-863e03cb3363" controls width="100%">Your browser does not support the video tag.</video></td>
-    </tr>
-  </table>
-  
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6009dfc2-142f-4ac0-87a3-6998032c322c" alt="Logo" width="300">
+</p>
+
+# Do you get a weird flicker or glitch when watching fullscreen video in a web browser?
+
+<table>
+  <tr>
+    <td style="width:50%; vertical-align: top;"><img src="https://github.com/user-attachments/assets/311b9823-738d-499d-95e4-f4d56400acd5" alt="Demo GIF" width="100%" /></td>
+    <td style="width:50%; vertical-align: top;"><video src="https://github.com/user-attachments/assets/ea8d8787-7e99-453f-8e41-863e03cb3363" controls width="100%">Your browser does not support the video tag.</video></td>
+  </tr>
+</table>
+
 If you're seeing a brief flash, flicker, or visual artifact when UI elements appear or disappear, you've found the right place.
 
 **The glitch can look different for everyone.** It might be a flash of colorful pixels like the demo above, a momentary black and white pattern, or even a screen of glitched stripes. As long as the *trigger* is the same, this tool should fix it.
-  
-  ### So, What's Actually Happening?
-  
-  That annoying glitch is caused by your browser (like Edge or Chrome) switching into a special performance mode called **Fullscreen Exclusive (FSE)**. This switch is *supposed* to happen when no UI is on screen.
-  
-  The *only* thing that seems to reliably stop the FSE switch is forcing a **native Windows UI overlay** to appear on top of the browser. For example:
-  *   The Live Captions overlay (`Win + Ctrl + L`)
-  *   The Emoji panel (`Win + .`)
-  *   The Voice Typing window (`Win + H`)
-  *   The Windows Volume bar
-  
-  Opening one of these completely suppresses the glitch. But who wants to watch a video with a distracting panel open?
-  
-  ### The Solution: An Invisible Windows Overlay
-  
-  That's exactly what **Flicker Killer** does. It creates the perfect workaround by mimicking that solution, but invisibly.
-  
-  The app runs silently in your system tray and places a tiny, transparent, and click-through window on your screen. Crucially, this window is set to 'always on top,' mimicking the behavior of a native Windows UI panel. This is enough to trick the browser into never attempting the problematic switch to FSE mode.
-  
-  The result? The glitch is eliminated entirely, and your fullscreen video playback is perfectly smooth.
-  
-  ---
-  
-  ### Features
-  *   **Set it and Forget It:** Runs silently in your system tray.
-  *   **Completely Invisible:** The window is transparent and doesn't interfere with your mouse.
-  *   **Run on Startup:** A simple right-click on the tray icon lets you enable it to start with Windows.
-  *   **Lightweight:** Uses almost no system resources.
-  
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/f8ff5d11-507b-4a75-b260-ae044e780b32" alt="System Tray Menu" width="300">
-  </p>
-  
-  ### Installation
-  1.  Go to the [**Releases Page**](https://github.com/Andrematomer/flicker-killer/releases) for this project.
-  2.  Download the latest `Flicker.Killer.Setup.exe` file.
-  3.  Run the installer.
-  4.  After installation, right-click the icon in your system tray and select "Run on Startup." You're all set!
 
-  ### Known Limitations
+### So, What's Actually Happening?
 
-  *   **Ocasional shutdown delay:**  The message "This app is preventing shutdown" may appear from time to time. Just wait—it will shut down automatically.
+That annoying glitch is caused by your browser (like Edge or Chrome) switching into a special performance mode called **Fullscreen Exclusive (FSE)**. This switch is *supposed* to happen when no UI is on screen.
 
-  *   **Does Not Affect some Fullscreen Exclusive Games:** This tool is designed for browsers and other desktop apps. It will **not** work for some games that use a true Fullscreen Exclusive (FSE) mode, as they take direct control of the display.
-  
-  *   **App Restart Required After FSE Gaming and windows lock screen:** After closing a game that uses FSE mode or after going into lock screen (`Win + L`), Windows may not correctly restore Flicker Killer's "always on top" property. If the browser flicker returns, simply **restart Flicker Killer** (right-click its tray icon > Quit, then launch it again) to restore its function.
-  
-  **Recommendation for Gamers:** To avoid these issues, run your games in a **"Borderless Fullscreen"** or **"Windowed Fullscreen"** mode if the option is available.
+The *only* thing that seems to reliably stop the FSE switch is forcing a **native Windows UI overlay** to appear on top of the browser. For example:
+*   The Live Captions overlay (`Win + Ctrl + L`)
+*   The Emoji panel (`Win + .`)
+*   The Voice Typing window (`Win + H`)
+*   The Windows Volume bar
 
-  ### License
-  This project is shared under the ISC License. See the `LICENSE` file for details.
-  
-  ### Disclaimer
-  This is a workaround for a specific bug and is not an official fix from Microsoft or any hardware vendor. Use at your own risk.
+Opening one of these completely suppresses the glitch. But who wants to watch a video with a distracting panel open?
 
+### The Solution: An Invisible Windows Overlay
 
+That's exactly what **Flicker Killer** does. It creates the perfect workaround by mimicking that solution, but invisibly.
+
+The app runs silently in your system tray and places a tiny, transparent, and click-through window on your screen. Crucially, this window is set to 'always on top,' mimicking the behavior of a native Windows UI panel. This is enough to trick the browser into never attempting the problematic switch to FSE mode.
+
+The result? The glitch is eliminated entirely, and your fullscreen video playback is perfectly smooth.
+
+### ⚠️ Alternative: The Permanent Fix (Clean Install)
+
+There is one other way to solve this: **a fresh, clean installation of Windows**. 
+
+I have confirmed that performing a "nuke and pave" (wiping the drive via BIOS and reinstalling Windows from scratch) permanently resolves this flickering issue at the driver/OS level. If you are willing to back up your data and start over, you likely won't need this tool.
+
+**However, if you want to fix the flicker _right now_ without the hassle of wiping your entire system, Flicker Killer is the instant solution.**
+
+---
+
+### Features
+*   **Set it and Forget It:** Runs silently in your system tray.
+*   **Completely Invisible:** The window is transparent and doesn't interfere with your mouse.
+*   **Run on Startup:** A simple right-click on the tray icon lets you enable it to start with Windows.
+*   **Lightweight:** Uses almost no system resources.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f8ff5d11-507b-4a75-b260-ae044e780b32" alt="System Tray Menu" width="300">
+</p>
+
+### Installation
+1.  Go to the [**Releases Page**](https://github.com/Andrematomer/flicker-killer/releases) for this project.
+2.  Download the latest `Flicker.Killer.Setup.exe` file.
+3.  Run the installer.
+4.  After installation, right-click the icon in your system tray and select "Run on Startup." You're all set!
+
+### Known Limitations
+
+*   **Occasional shutdown delay:**  The message "This app is preventing shutdown" may appear from time to time. Just wait—it will shut down automatically.
+
+*   **Does Not Affect some Fullscreen Exclusive Games:** This tool is designed for browsers and other desktop apps. It will **not** work for some games that use a true Fullscreen Exclusive (FSE) mode, as they take direct control of the display.
+
+*   **App Restart Required After FSE Gaming and windows lock screen:** After closing a game that uses FSE mode or after going into lock screen (`Win + L`), Windows may not correctly restore Flicker Killer's "always on top" property. If the browser flicker returns, simply **restart Flicker Killer** (right-click its tray icon > Quit, then launch it again) to restore its function.
+
+**Recommendation for Gamers:** To avoid these issues, run your games in a **"Borderless Fullscreen"** or **"Windowed Fullscreen"** mode if the option is available.
+
+### License
+This project is shared under the ISC License. See the `LICENSE` file for details.
+
+### Disclaimer
+This is a workaround for a specific bug and is not an official fix from Microsoft or any hardware vendor. Use at your own risk.
