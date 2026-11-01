@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A simple app to prevent browser flickering on high-refresh rate displays.",
   "main": "main.js",
-  "author": "Andrematomer",
+  "author": "Vinsensius Andre Wijaya",
   "license": "ISC",
   "scripts": {
     "start": "electron .",
